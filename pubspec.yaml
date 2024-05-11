@@ -1,7 +1,7 @@
 name: google_search_result_page
-description: "Description here"
+description: "Google Search Result Page View"
 #publish_to: 'none'
-#repository: https://github.com/melodysdreamj/juneflow
+repository: https://github.com/juneview-songdo/google_search_result_page
 
 version: 1.0.0+1
 

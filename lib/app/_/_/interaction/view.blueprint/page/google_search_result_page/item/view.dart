@@ -54,12 +54,19 @@ class ItemViewState extends State<ItemView> with StateMother {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(50),
                       // This value must be given as the radius of the image to appear circular.
-                      child: Image.network(
-                        widget.iconUrl,
-                        width: 35,
-                        height: 35,
-                        fit: BoxFit.cover, // The image is adjusted to fit the container size.
-                      ),
+                      child: (widget.iconUrl == 'sample')
+                          ? Image.asset(
+                              'assets/view/google_search_result_page/favicon.webp',
+                              width: 35,
+                              height: 35,
+                              fit: BoxFit.cover, // The image is adjusted to fit the container size.
+                            )
+                          : Image.network(
+                              widget.iconUrl,
+                              width: 35,
+                              height: 35,
+                              fit: BoxFit.cover, // The image is adjusted to fit the container size.
+                            ),
                     ),
                   ),
                   Gap(10),
@@ -75,7 +82,7 @@ class ItemViewState extends State<ItemView> with StateMother {
               ),
               Gap(10),
               Text(
-               widget.title,
+                widget.title,
                 style: Theme.of(context).textTheme.headlineSmall,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -102,8 +109,10 @@ class ItemViewState extends State<ItemView> with StateMother {
 }
 
 main() async {
-  return buildApp(appHome: ItemView(
-    iconUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUzheY-vg34-kp6oq-jMdEyFHpBNPt7bqsaaoVGWJYHhjrKz_b3UIkNKYDAg&s",
+  return buildApp(
+      appHome: ItemView(
+    iconUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUzheY-vg34-kp6oq-jMdEyFHpBNPt7bqsaaoVGWJYHhjrKz_b3UIkNKYDAg&s",
     websiteName: "Google",
     websiteUrl: "https://www.google.com",
     title: "This is the official homepage of Google.",

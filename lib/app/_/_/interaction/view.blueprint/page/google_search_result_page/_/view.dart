@@ -18,7 +18,7 @@ class NewViewState extends State<NewView> with StateMother {
     return Scaffold(
       backgroundColor: Colors.grey.withOpacity(0.1),
       appBar: AppBar(
-        title: Text("Google Search Results").textStyle(Theme.of(context).textTheme.headlineSmall!).fontWeight(FontWeight.bold),
+        title: Text("Google").textStyle(Theme.of(context).textTheme.headlineSmall!).fontWeight(FontWeight.bold),
         centerTitle: false,
       ),
       // google search result page
@@ -26,7 +26,7 @@ class NewViewState extends State<NewView> with StateMother {
         child: Column(
           children: [
             ItemView(
-              iconUrl: "https://www.google.com/favicon.ico", // Using Google favicon
+              iconUrl: "sample", // Using Google favicon
               websiteName: "New York Times",
               websiteUrl: "https://www.nytimes.com",
               title: "Latest News in Global Politics",
@@ -34,7 +34,7 @@ class NewViewState extends State<NewView> with StateMother {
               date: DateTime(2024, 5, 1),
             ),
             ItemView(
-              iconUrl: "https://www.google.com/favicon.ico", // Using Google favicon
+              iconUrl: "sample", // Using Google favicon
               websiteName: "GitHub",
               websiteUrl: "https://github.com",
               title: "Explore Open Source Projects",
@@ -42,7 +42,7 @@ class NewViewState extends State<NewView> with StateMother {
               date: DateTime(2024, 5, 2),
             ),
             ItemView(
-              iconUrl: "https://www.google.com/favicon.ico", // Using Google favicon
+              iconUrl: "sample", // Using Google favicon
               websiteName: "IMDb",
               websiteUrl: "https://www.imdb.com",
               title: "Top Movies to Watch This Year",
@@ -50,7 +50,7 @@ class NewViewState extends State<NewView> with StateMother {
               date: DateTime(2024, 4, 30),
             ),
             ItemView(
-              iconUrl: "https://www.google.com/favicon.ico", // Using Google favicon
+              iconUrl: "sample", // Using Google favicon
               websiteName: "Wikipedia",
               websiteUrl: "https://www.wikipedia.org",
               title: "Learn Something New",
@@ -58,7 +58,7 @@ class NewViewState extends State<NewView> with StateMother {
               date: DateTime(2024, 5, 3),
             ),
             ItemView(
-              iconUrl: "https://www.google.com/favicon.ico", // Using Google favicon
+              iconUrl: "sample", // Using Google favicon
               websiteName: "Travel + Leisure",
               websiteUrl: "https://www.travelandleisure.com",
               title: "Best Travel Destinations of 2024",
@@ -66,7 +66,7 @@ class NewViewState extends State<NewView> with StateMother {
               date: DateTime(2024, 5, 4),
             ),
             ItemView(
-              iconUrl: "https://www.google.com/favicon.ico", // Using Google favicon
+              iconUrl: "sample", // Using Google favicon
               websiteName: "Epicurious",
               websiteUrl: "https://www.epicurious.com",
               title: "Delicious Recipes for Home Chefs",
